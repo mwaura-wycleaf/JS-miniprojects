@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <label for="email">Enter your Email:</label>
+    <input id="yourEmail" placeholder="example@gmail.com"><br><br>
+    <button onclick="clickButton()">click me!</button>
+    <p id="demo"></p>
+    <script>
+        function clickButton() {
+           let myEmail = document.querySelector("#yourEmail").value;
+           let stars = "*".repeat(myEmail.length - 12);
+           let newEmail = myEmail.slice(0,2) + stars + myEmail.slice(-10);
+           document.querySelector("#demo").innerHTML = newEmail;
+        }
+    </script>
+</body>
+</html>
