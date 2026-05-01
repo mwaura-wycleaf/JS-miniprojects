@@ -15,15 +15,16 @@
     
     function onclickButton() {
         let phoneNumber = document.querySelector("#phoneNumber").value;
-        let newNumber = phoneNumber.slice(0,4) + "****" + phoneNumber.slice(-2);
+        let stars = "*".repeat(phoneNumber.length - 6)
+        let newNumber = phoneNumber.slice(0,4) + stars + phoneNumber.slice(-2);
         
 
         if (phoneNumber === ""){
             document.querySelector("#demo").innerHTML = "Enter phone number!!";
-             document.querySelector("#demo").style.color = "red"
+             document.querySelector("#demo").style.color = "red";
         }else {
             document.querySelector("#demo").innerHTML = newNumber;
-            document.querySelector("#demo").style.color = "black"
+            document.querySelector("#demo").style.color = "black";
         }
     }
     
