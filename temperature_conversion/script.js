@@ -5,7 +5,7 @@
         if (unit === "c=>f") {
             finalResult = (parseFloat(temp) * 9/5) + 32 +" F";
         }else if (unit === "f=>c"){
-            finalResult = (parseFloat(temp)- 32) * 9/5 +" C";
+            finalResult = (parseFloat(temp)- 32) * 5/9 +" C";
         }
         
         document.querySelector("#demo").innerHTML = finalResult;
