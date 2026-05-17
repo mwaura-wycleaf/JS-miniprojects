@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
-<body>
-    <label for="email">Enter your Email:</label>
-    <input id="yourEmail" placeholder="example@gmail.com"><br><br>
-    <button onclick="clickButton()">click me!</button>
-    <p id="demo"></p>
-    <script>
-        function clickButton() {
+   function clickButton() {
            let myEmail = document.querySelector("#yourEmail").value;
            let starsCount = Math.max(0, myEmail.length - 6)
            let stars = "*".repeat(starsCount)
@@ -27,6 +13,3 @@
             document.querySelector("#demo").style.color = "black";
         }
         }
-    </script>
-</body>
-</html>

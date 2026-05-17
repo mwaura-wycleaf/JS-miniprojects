@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <label for="PhoneNumber">Phone Number:</label>
-    <input id="phoneNumber" type="tel"><br><br>
-    <button onclick="onclickButton();">Click me for result</button>
-    <p id="demo"></p>
-
-    <script>
-    
-    function onclickButton() {
+ function onclickButton() {
         let phoneNumber = document.querySelector("#phoneNumber").value;
         let starsCount = Math.max(0, phoneNumber.length - 6)
         let stars = "*".repeat(starsCount)
@@ -29,6 +14,3 @@
         }
     }
     
-    </script>
-</body>
-</html>
