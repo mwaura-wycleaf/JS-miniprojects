@@ -1,6 +1,6 @@
 let student1 = {
     firstName: "James",
-    secondName: "milner",
+    secondName: "Milner",
     age: "19",
     course: "Computer Science"
 }
