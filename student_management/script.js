@@ -13,3 +13,7 @@ let student2 = {
     course: "Acturial Science",
     isPresent: "false"
 }
+
+const student = [student1, student2];
+
+console.log(student)
