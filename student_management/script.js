@@ -3,7 +3,7 @@ let student1 = {
     secondName: "Milner",
     age: "19",
     course: "Computer Science",
-    isPresent: "true"
+    isPresent: true
 }
 
 let student2 = {
@@ -11,7 +11,7 @@ let student2 = {
     secondName: "Polo",
     age: "24",
     course: "Acturial Science",
-    isPresent: "false"
+    isPresent: false
 }
 
 const students = [student1, student2];
