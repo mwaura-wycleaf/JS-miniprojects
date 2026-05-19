@@ -14,6 +14,10 @@ let student2 = {
     isPresent: "false"
 }
 
-const student = [student1, student2];
+const students = [student1, student2];
 
-console.log(student)
+console.log(students)
+
+for (let student of students) {
+    console.log(`${student.firstName} ${student.secondName} pursues ${student.course} and is ${student.isPresent === true ? "present" : "absent"}`)
+}   
