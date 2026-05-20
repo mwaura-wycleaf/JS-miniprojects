@@ -19,5 +19,8 @@ const students = [student1, student2];
 console.log(students)
 
 for (let student of students) {
-    console.log(`${student.firstName} ${student.secondName} pursues ${student.course} and is ${student.isPresent === true ? "present" : "absent"}`)
+    let output = `${student.firstName} ${student.secondName} pursues ${student.course} and is ${student.isPresent === true ? "present" : "absent"}`
+
+    document.getElementById("demo").innerHTML += output + "<br><br>"
+    console.log(output);
 }   
