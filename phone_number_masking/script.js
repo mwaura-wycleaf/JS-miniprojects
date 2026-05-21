@@ -1,8 +1,8 @@
  function onclickButton() {
         let phoneNumber = document.querySelector("#phoneNumber").value;
-        let starsCount = Math.max(0, phoneNumber.length - 6)
+        let starsCount = Math.max(0, phoneNumber.length - 5)
         let stars = "*".repeat(starsCount)
-        let newNumber = phoneNumber.slice(0,4) + stars + phoneNumber.slice(-2);
+        let newNumber = phoneNumber.slice(0,2) + stars + phoneNumber.slice(-3);
         
 
         if (phoneNumber === ""){
