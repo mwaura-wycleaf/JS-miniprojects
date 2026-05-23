@@ -24,3 +24,16 @@ for (let student of students) {
     document.getElementById("demo").innerHTML += output + "<br><br>"
     console.log(output);
 }   
+
+function addStudent(firstName, secondName, age, course, isPresent){
+    const newStudent = {
+        firstName:firstName,
+        secondName:secondName,
+        age:age,
+        course:course,
+        isPresent:isPresent,
+    }
+    students.push(newStudent);
+}
+addStudent("Flora", "Kendi", 21, "Food Science", true)
+console.log(students);

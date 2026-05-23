@@ -10,7 +10,6 @@
              document.querySelector("#demo").style.color = "red";
         }else {
             document.querySelector("#demo").innerHTML = newNumber;
-            document.querySelector("#demo").style.color = "black";
-        }
+            document.querySelector("#demo").style.color = "black";        }
     }
     
