@@ -20,7 +20,15 @@
             //return total * value;
         }
 
-       
+       //Average
+       function getAverage(numbers){
+        let total = array.reduce(getSum);
+        return total / numbers.length;
+       }
+
+       let average = getAverage(array);
+
+       document.querySelector("#demo1").innerHTML = average;
 
        
     </script>
