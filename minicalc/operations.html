@@ -8,6 +8,7 @@
 <body>
  <p id="demo"></p>
  <p id="demo1"></p>
+ <p id="demo2"></p>
     <script>
         const array = [2, 5, 8, 11];
 
@@ -30,7 +31,13 @@
 
        document.querySelector("#demo1").innerHTML = average;
 
-       
+       //Maximum
+       function getLargest(array) {
+        let largest = Math.max(...array);
+        return largest;
+       }
+ 
+       document.querySelector("#demo2").innerHTML = getLargest(array);
     </script>
 </body>
 </html>
