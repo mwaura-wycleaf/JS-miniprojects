@@ -9,6 +9,7 @@
  <p id="demo"></p>
  <p id="demo1"></p>
  <p id="demo2"></p>
+ <p id="demo3"></p>
     <script>
         const array = [2, 5, 8, 11];
 
@@ -38,6 +39,14 @@
        }
  
        document.querySelector("#demo2").innerHTML = getLargest(array);
+
+       //Minimum
+       function getSmallest(array) {
+        let smallest = Math.min(...array);
+        return smallest;
+       }
+ 
+       document.querySelector("#demo3").innerHTML = getSmallest(array);
     </script>
 </body>
 </html>
