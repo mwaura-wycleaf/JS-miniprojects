@@ -1,6 +1,6 @@
    function clickButton() {
            let myEmail = document.querySelector("#yourEmail").value;
-           let starsCount = Math.max(0, myEmail.length - 6)
+           let starsCount = Math.max(0, myEmail.length - 12)
            let stars = "*".repeat(starsCount)
            let newEmail = myEmail.slice(0,2) + stars + myEmail.slice(-10);
            
