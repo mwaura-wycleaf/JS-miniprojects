@@ -28,3 +28,9 @@ reduce.addEventListener("click", function() {
         result.style.color = "red";
         result.style.fontSize = fontSize + "px";
         });      
+
+reset.addEventListener("click", function() {
+        count = 0;
+        updateCount();
+        result.style.color = "black";
+        });
