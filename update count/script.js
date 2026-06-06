@@ -8,3 +8,11 @@ let fontSize = 30;
  function updateCount () {
          document.getElementById("demo").innerHTML = count;
     }
+
+    start.addEventListener("click", function() {
+        count++;
+        fontSize += 2;
+        updateCount();
+        result.style.color = "green";
+        result.style.fontSize = fontSize + "px";
+        });
