@@ -16,3 +16,15 @@ let fontSize = 30;
         result.style.color = "green";
         result.style.fontSize = fontSize + "px";
         });
+
+reduce.addEventListener("click", function() {
+            
+            if (count > 0){
+                count--;
+                fontSize -= 2;
+
+            }
+            updateCount();
+        result.style.color = "red";
+        result.style.fontSize = fontSize + "px";
+        });      
