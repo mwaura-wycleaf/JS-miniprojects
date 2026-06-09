@@ -32,4 +32,5 @@ reset.addEventListener("click", function() {
     count = 0;
     updateCount();
     result.style.color = "black";
+    result.style.fontSize = 30 + "px";
  });
