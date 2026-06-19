@@ -17,18 +17,37 @@ function addTask() {
     }
     task.push(text);
     theTask.value = "";
-    displayTask()
-
+    saveTasks();
+    displayTask();
+    
 }
 
 function removeTask(i) {
     task.splice(i, 1);
+    saveTasks();
     displayTask();
+    
 }
 
 document.getElementById("clearAll").addEventListener("click", function() {
     task = [];
+    saveTasks();
     displayTask();
+    
 })
+
+function saveTasks() {
+    localStorage.setItem("task", JSON.stringify(task));
+};
+
+function loadTasks() {
+    let saved = localStorage.getItem("task");
+    if(saved !== null) {
+        task = JSON.parse(saved)
+    }
+}
+
+loadTasks();
+displayTask();
 
     
