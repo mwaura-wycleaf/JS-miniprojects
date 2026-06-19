@@ -2,6 +2,8 @@ let start = document.getElementById("start");
 let reset = document.getElementById("reset");
 let reduce = document.getElementById("reduce");
 let result = document.getElementById("demo");
+let save = document.getElementById("save");
+let load =document.getElementById("load");
 let count = 0;
 let fontSize = 30;
 
@@ -26,7 +28,21 @@ reduce.addEventListener("click", function() {
     updateCount();
     result.style.color = "red";
     result.style.fontSize = fontSize + "px";
-});      
+});   
+
+save.addEventListener("click", function() {
+    localStorage.setItem("count", count);
+});
+
+load.addEventListener("click", function() {
+    let saved = localStorage.getItem("count");
+    if (saved !== null) {
+        count = Number(saved);
+    }
+    updateCount();
+})
+
+
 
 reset.addEventListener("click", function() {
     count = 0;
