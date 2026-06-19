@@ -20,3 +20,8 @@ function addTask() {
     displayTask()
 
 }
+
+function removeTask(i) {
+    task.splice(i, 1);
+    displayTask();
+}
