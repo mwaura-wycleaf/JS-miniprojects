@@ -51,9 +51,9 @@ let listElements = document.getElementById("list");
 function taskComplete() {
     let tasks= listElements.getElementsByTagName("li")
     for(let i = 0;i < tasks.length; i++){
-        tasks[i].onclick = function() {
+        tasks[i].addEventListener("click", function() {
             this.classList.toggle('completed')
-        }
+        })
     }
 }
 
