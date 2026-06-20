@@ -11,8 +11,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input id="task" placeholder="New task">
-    <button onclick="addTask()" style="background-color: green;border:1px solid black;">Add task</button>
+    <div class="container">
+        <div class="newTask">
+            <input id="task" placeholder="New task">
+            <button onclick="addTask()">Add task</button>
+        </div>
+    </div>
+    
+    
     <ul id="list"></ul>
     <button id="clearAll">Clear All</button>
 
