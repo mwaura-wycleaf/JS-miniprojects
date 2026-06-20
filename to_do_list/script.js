@@ -1,5 +1,10 @@
 let task = [];
 
+function updateUI() {
+    saveTasks();
+    displayTask();
+}
+
 function displayTask() {
     let html = "";
     for (let i = 0; i < task.length; i++) {
@@ -17,23 +22,25 @@ function addTask() {
     }
     task.push(text);
     theTask.value = "";
-    saveTasks();
-    displayTask();
+    // saveTasks();
+    // displayTask();
+    updateUI();
     
 }
 
 function removeTask(i) {
     task.splice(i, 1);
-    saveTasks();
-    displayTask();
+    // saveTasks();
+    // displayTask();
+    updateUI();
     
 }
 
 document.getElementById("clearAll").addEventListener("click", function() {
     task = [];
-    saveTasks();
-    displayTask();
-    
+    // saveTasks();
+    // displayTask();
+    updateUI();
 })
 
 function saveTasks() {
