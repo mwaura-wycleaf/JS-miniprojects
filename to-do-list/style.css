@@ -83,5 +83,11 @@ ul li {
 
 .delete {
     background-color: #32a76c;
-    height: 30px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
 }
