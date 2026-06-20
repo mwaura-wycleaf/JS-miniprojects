@@ -79,6 +79,7 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 
 }
 
@@ -91,4 +92,8 @@ ul li {
     border: none;
     cursor: pointer;
 
+}
+
+.completed {
+    text-decoration: line-through;
 }

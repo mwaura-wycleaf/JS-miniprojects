@@ -3,7 +3,7 @@ let task = [];
 function displayTask() {
     let html = "";
     for (let i = 0; i < task.length; i++) {
-        html += `<li> ${task[i]} <button class = "delete" onclick = 'removeTask(i)';> <i class="far fa-trash-alt"></i> </button></li>`
+        html += `<li> ${task[i]} <button class = "delete" onclick = 'removeTask(${i})';> <i class="far fa-trash-alt"></i> </button></li>`
     }
     document.getElementById("list").innerHTML = html;
 }
@@ -47,7 +47,18 @@ function loadTasks() {
     }
 }
 
+let listElements = document.getElementById("list");
+function taskComplete() {
+    let tasks= listElements.getElementsByTagName("li")
+    for(let i = 0;i < tasks.length; i++){
+        tasks[i].onclick = function() {
+            this.classList.toggle('completed')
+        }
+    }
+}
+
 loadTasks();
 displayTask();
+taskComplete();
 
     
