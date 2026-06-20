@@ -3,7 +3,7 @@ let task = [];
 function displayTask() {
     let html = "";
     for (let i = 0; i < task.length; i++) {
-        html += "<li>" + task[i] + "<button onclick = 'removeTask(" + i + ")';> x </button></li>"
+        html += `<li> ${task[i]} <button class = "delete" onclick = 'removeTask(i)';> <i class="far fa-trash-alt"></i> </button></li>`
     }
     document.getElementById("list").innerHTML = html;
 }

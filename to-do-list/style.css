@@ -67,4 +67,21 @@ body {
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
     margin-top: 40px;
     position: relative;
+    width: 100%;
+}
+
+ul li {
+    border-bottom: 2px solid #d1d3d4;
+    list-style-type: none;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.delete {
+    background-color: #32a76c;
+    height: 30px;
 }
