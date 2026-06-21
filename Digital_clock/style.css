@@ -12,10 +12,32 @@ body {
 .clock {
     width: 550px;
     height: 150px;
-    border: 2px solid black;
     transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
     left: 50%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clock div {
+    position: relative;
+    background-color: white;
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'open sans', sans-serif;
+    font-size: 70px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    letter-spacing: 4px;
+}
+
+.clock span{
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
 }
