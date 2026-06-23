@@ -17,4 +17,38 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     left:50%;
+    background-color: white;
+    padding: 50px 10px;
+    display: grid;
+    justify-items: center;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+input[type = "text"] {
+    width: 90px;
+    font-weight: 600;
+    color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+button {
+    width: 160px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(97, 16, 173);
+    color: white;
+    border:none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+
 }
