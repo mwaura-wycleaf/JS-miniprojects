@@ -1,3 +1,5 @@
+let addButton = document.getElementById("addTask");
+
 let task = [];
 
 function updateUI() {
@@ -13,7 +15,7 @@ function displayTask() {
     document.getElementById("list").innerHTML = html;
 }
 
-function addTask() {
+addButton.addEventListener("click", function() {
     let theTask = document.getElementById("task");
     let text= theTask.value;
     
@@ -26,7 +28,7 @@ function addTask() {
     // displayTask();
     updateUI();
     
-}
+})
 
 function removeTask(i) {
     task.splice(i, 1);
