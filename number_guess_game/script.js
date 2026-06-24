@@ -10,7 +10,7 @@ console.log(num);
 
 
 myButton.addEventListener("click", function() {
- let theGuess = document.getElementById("guess").value;
+ let theGuess = Number(document.getElementById("guess").value);
     if(theGuess < 1 || theGuess > 100){
         alert("Please enter a number between 1 and 100");
     }else {
@@ -25,7 +25,7 @@ myButton.addEventListener("click", function() {
             message1.innerHTML = `Your guess is too high`
             message2.innerHTML = `No. of guesses: ${no_of_guesses}`;
             message3.innerHTML = `Guessed numbers are: ${guessedNumbers}`
-        }else if(theGuess == num){
+        }else if(theGuess === num){
             message1.innerHTML = `Hooray!!!You win`;
             message2.innerHTML = `The number was ${num}`;
             message3.innerHTML = `You guesssed it in ${no_of_guesses} guesses` ;
@@ -33,4 +33,5 @@ myButton.addEventListener("click", function() {
         }
             
     }
+    console.log(theGuess, typeof theGuess)
 })
