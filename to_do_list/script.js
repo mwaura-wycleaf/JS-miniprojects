@@ -1,4 +1,5 @@
 let addButton = document.getElementById("addTask");
+let theTask = document.getElementById("task");
 
 let task = [];
 
@@ -16,7 +17,6 @@ function displayTask() {
 }
 
 addButton.addEventListener("click", function() {
-    let theTask = document.getElementById("task");
     let text= theTask.value;
     
     if (text === ""){
@@ -65,6 +65,13 @@ function taskComplete() {
         })
     }
 }
+
+theTask.addEventListener("keydown", function(event){
+    if(event.key === "Enter"){
+        event.preventDefault();
+        addButton.click();
+    }
+})
 
 loadTasks();
 displayTask();
