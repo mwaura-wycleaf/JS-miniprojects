@@ -2,6 +2,7 @@ let message1 = document.getElementById("message1");
 let message2 = document.getElementById("message2");
 let message3 = document.getElementById("message3");
 let myButton = document.getElementById("my-btn");
+let guess = document.getElementById("guess");
 
 let num = Math.floor(Math.random() * 100) + 1;
 let no_of_guesses = 0;
@@ -10,7 +11,7 @@ console.log(num);
 
 
 myButton.addEventListener("click", function() {
- let theGuess = Number(document.getElementById("guess").value);
+ let theGuess = Number(guess.value);
     if(theGuess < 1 || theGuess > 100){
         alert("Please enter a number between 1 and 100");
     }else {
@@ -35,3 +36,11 @@ myButton.addEventListener("click", function() {
     }
     console.log(theGuess, typeof theGuess)
 })
+
+guess.addEventListener("keydown", function(event){
+    if(event.key === "Enter"){
+        event.preventDefault();
+        myButton.click();
+    }
+})
+
