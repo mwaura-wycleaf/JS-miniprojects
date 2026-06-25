@@ -2,9 +2,8 @@ let hour = document.querySelector(".hour");
 let minute = document.querySelector(".minute");
 let seconds = document.querySelector(".seconds");
 
-setInterval(showTime, 1000)
 
-function showTime () {
+setInterval(function() {
     let time = new Date();
     hour.innerHTML = time.getHours();
     minute.innerHTML = time.getMinutes();
@@ -22,7 +21,7 @@ function showTime () {
         seconds.innerHTML = "0" + seconds.innerHTML;
     }
 
-}
+}, 1000)
 
 
 
