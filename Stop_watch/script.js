@@ -33,3 +33,10 @@ function displayTime() {
     timerRef.innerHTML = `${hoursTime}: ${minutesTime}: ${secondsTime}: ${millisecondsTime}`;
 
 }
+
+//implement pause function
+let pause = document.getElementById("pauseTimer");
+
+pause.addEventListener("click", function() {
+    clearInterval(int);
+})
