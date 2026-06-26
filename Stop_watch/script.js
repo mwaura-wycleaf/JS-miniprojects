@@ -40,3 +40,12 @@ let pause = document.getElementById("pauseTimer");
 pause.addEventListener("click", function() {
     clearInterval(int);
 })
+
+//implement reset function
+let reset = document.getElementById("resetTimer");
+
+reset.addEventListener("click", function() {
+    clearInterval(int);
+    [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
+    timerRef.innerHTML = `00 : 00 : 00 : 000`
+})
