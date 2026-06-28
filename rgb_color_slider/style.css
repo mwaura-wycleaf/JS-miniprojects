@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: transparent;
   border: 2px solid white;
   width: 60%;
   min-width: 450px;
