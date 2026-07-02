@@ -10,7 +10,7 @@ body {
     background-color: black;
 }
 
-.container {
+.countdown-container {
     width:80vw;
     display: flex;
     justify-content: space-around;
@@ -63,7 +63,7 @@ span.text {
     
 }
  @media screen and (max-width: 768px) {
-    .container {
+    .countdown-container {
         width: 85vw;   
     }
 
@@ -75,7 +75,7 @@ span.text {
 }
 
 @media screen and (max-width: 480px) {
-    .container {
+    .countdown-container {
         width: 90vw;
         flex-wrap:wrap;   
     }
@@ -88,7 +88,7 @@ span.text {
 }
 
 @media screen and (max-width: 320px) {
-    .container {
+    .countdown-container {
         gap: 15px;  
     }
     .box {
