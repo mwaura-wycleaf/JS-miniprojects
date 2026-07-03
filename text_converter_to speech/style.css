@@ -6,7 +6,8 @@
 
 body {
     height:100vh;
-    background: linear-gradient(rgb(45, 45, 138),rgb(28, 28, 126));
+    background: linear-gradient(rgb(95, 95, 193),rgb(28, 28, 126));
+    font-family:"Poppins",sans-serif;
 }
 
 .container {
