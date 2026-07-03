@@ -10,6 +10,14 @@ submit.addEventListener("click", function(){
     //speak the text
     window.speechSynthesis.speak(audio);
 });
+resume.addEventListener("click", function(){
+    pause.style.display = "block";
+    resume.style.display = "none";
+    
+    if(speechSynthesis.pause){
+        speechSynthesis.resume();
+    }
+})
 
 window.onload = function(){
     if ('speechSynthesis' in window) {
