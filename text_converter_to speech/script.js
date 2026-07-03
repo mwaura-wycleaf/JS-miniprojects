@@ -19,7 +19,15 @@ resume.addEventListener("click", function(){
     }
 })
 
+pause.addEventListener("click", function(){
+    pause.style.display = "none";
+    resume.style.display = "block";
+
+    speechSynthesis.speaking ? speechSynthesis.pause() : "";
+})
+
 window.onload = function(){
+    resume.style.display = "none";
     if ('speechSynthesis' in window) {
         audio = new SpeechSynthesisUtterance();
     } else {
