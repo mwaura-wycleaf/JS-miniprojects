@@ -24,3 +24,8 @@ body {
     font-size: 1.5rem;
     border-radius: 10px;
 }
+
+#result span {
+    color: #316fb6;
+    font-weight: bold;
+}
