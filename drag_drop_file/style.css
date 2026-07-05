@@ -53,4 +53,23 @@ label {
     width:90%;
     position:relative;
     margin:0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap:1.25em;
+    flex-wrap: wrap;
+}
+
+#image-display figure {
+    width: 45%;
+}
+
+#image-display img {
+    width: 100%;
+}
+
+#image-display {
+    font-size: 0.8em;
+    text-align: center;
+    color: grey;
+    
 }
