@@ -40,3 +40,17 @@ label {
     cursor: pointer;
 }
 
+.active {
+    border: 0.2em dotted blue;
+}
+
+#error {
+    text-align: center;
+    color:red;
+}
+
+#image-display {
+    width:90%;
+    position:relative;
+    margin:0 auto;
+}
