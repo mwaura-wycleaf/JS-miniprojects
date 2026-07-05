@@ -20,8 +20,15 @@ const fileHandler = (file, name, type) => {
      img.src = reader.result;
      imageContainer.appendChild(img);
      imageContainer.innerHTML += `<figcaption>${name}</figcaption>`;
-     imageDisplay.appendChild(imageContainer);
+     imgDisplay.appendChild(imageContainer);
     }
 }
 
-
+//Upload Button 
+uploadButton.addEventListener("change", () => {
+  imgDisplay.innerHTML = "";
+  Array.from(uploadButton.files).forEach((file) =>{
+    fileHandler(file, file.name, file.type)
+  })
+    
+})
