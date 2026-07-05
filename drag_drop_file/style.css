@@ -21,3 +21,22 @@ body {
     box-shadow:0 1.25em 3.43em rgba(0,0,0,0.2);
     border-radius: 0.5em;
 }
+
+input[type = "file"] {
+    display:none;
+}
+
+label {
+    display:block;
+    position:relative;
+    background-color: blue;
+    color: white;
+    font-size: 1.1em;
+    text-align:center;
+    width:16em;
+    padding:1em 0;
+    border-radius:0.3em;
+    margin:0 auto 1em auto;
+    cursor: pointer;
+}
+
