@@ -1,4 +1,4 @@
-     let convrertTemperature = document.getElementById("convertTemperature")
+     let convertTemperature = document.getElementById("convertTemperature")
      convertTemperature.addEventListener("click", function convertTemperature() {
         let temp = document.querySelector("#tempConversion").value;
         let unit = document.querySelector("#unitName").value;
