@@ -16,3 +16,10 @@ maskEmail.addEventListener("click", function clickButton() {
         document.querySelector("#demo").style.color = "black";
     }
 })
+
+email.addEventListener("keydown", (event) => {
+    if (event.key === "Enter"){
+        event.preventDefault();
+        maskEmail.click();
+    }
+})
