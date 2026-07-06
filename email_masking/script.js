@@ -1,7 +1,8 @@
 let maskEmail = document.getElementById("maskEmail")
+let email = document.getElementById("email");
 
 maskEmail.addEventListener("click", function clickButton() {
-    let myEmail = document.querySelector("#email").value;
+    let myEmail = email.value;
     let starsCount = Math.max(0, myEmail.length - 12)
     let stars = "*".repeat(starsCount)
     let newEmail = myEmail.slice(0,2) + stars + myEmail.slice(-10);
