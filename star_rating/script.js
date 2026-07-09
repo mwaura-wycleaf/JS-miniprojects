@@ -41,3 +41,14 @@ startContainer.forEach((element, index) => {
         }
     })
 })
+
+const ratingUpdate = (start, end, active) => {
+    for (let i = starr ; i<=end; i++) {
+        if(active) {
+            startContainer[i].classList.remove("inactive");
+            startContainer[i].firstElementChild.className = "fa-star fa-regular"
+            
+        }
+    }
+}
+
