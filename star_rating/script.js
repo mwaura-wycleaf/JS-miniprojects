@@ -37,7 +37,7 @@ startContainer.forEach((element, index) => {
             ratingUpdate(0, index, true);
         } else {
             //Regular stars (remove color)
-            retingUpdate(index, startContainer.length-1, false);
+            ratingUpdate(index, startContainer.length-1, false);
         }
     })
 })
