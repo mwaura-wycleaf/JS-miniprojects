@@ -90,3 +90,9 @@ submitButton.addEventListener("click", () => {
     
 });
 
+window.onload = () => {
+    submitButton.disabled = true;
+    submitSection.classList.remove("hide");
+    submitSection.classList.add("show");
+}
+
