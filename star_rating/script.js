@@ -55,9 +55,16 @@ const ratingUpdate = (start, end, active) => {
         }
     }
 
-    let activeElements = document.getElementsByClassName("active");
-    if (activeElements.length > 0){
-        switch (activeElements.length) {
+    // Count stars that are filled
+        let activeCount = 0;
+        startContainer.forEach(star => {
+            if (!star.classList.contains("inactive")) {
+                activeCount++;
+            }
+        });
+
+        if (activeCount > 0){
+            switch (activeCount) {
             case 1:
             message.innerText = "Terrible";
             break;
