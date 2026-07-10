@@ -46,9 +46,42 @@ const ratingUpdate = (start, end, active) => {
     for (let i = starr ; i<=end; i++) {
         if(active) {
             startContainer[i].classList.remove("inactive");
-            startContainer[i].firstElementChild.className = "fa-star fa-regular"
+            startContainer[i].firstElementChild.className = "fa-star fa-sld"
             
+        }else {
+            startContainer[i].classList.add("inactive");
+            startContainer[i].firstElementChild.className = "fa-star fa-regular"
         }
     }
-}
+
+    let activeElements = document.getElementsByClassName("active");
+    if (activeElements.length > 0){
+        switch (activeElements.length) {
+            case 1:
+            message.innerText = "Terrible";
+            break;
+
+            case 2:
+             message.innerText = "Poor";
+            break;
+
+            case 3:
+             message.innerText = "Average";
+            break;
+
+            case 4:
+             message.innerText = "Good";
+            break;
+
+            case 1:
+             message.innerText = "Excellent";
+            break;
+        }
+    }
+    else {
+        message.innerText = "";
+    }
+};
+
+
 
