@@ -47,7 +47,7 @@ const ratingUpdate = (start, end, active) => {
     for (let i = start ; i<=end; i++) {
         if(active) {
             startContainer[i].classList.remove("inactive");
-            startContainer[i].firstElementChild.className = "fa-star fa-sld"
+            startContainer[i].firstElementChild.className = "fa-star fa-solid"
             
         }else {
             startContainer[i].classList.add("inactive");
