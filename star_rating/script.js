@@ -1,7 +1,8 @@
-let startContainer = document.querySelector(".star-container");
+let startContainer = document.querySelectorAll(".star-container");
 let submitButton = document.querySelector("#submit");
 let message = document.querySelector("#message");
-let submitSection = document.querySelector("submit-section");
+let submitSection = document.querySelector(".submit-section");
+
 
 //Events for touch and mouse
 let event = {
@@ -30,7 +31,7 @@ const isTouchDevice = () => {
 isTouchDevice();
 
 startContainer.forEach((element, index) => {
-    element.addEventListaner(event[deviceType].over, () => {
+    element.addEventListener(event[deviceType].over, () => {
         submitButton.disabled = false;
         if(element.classList.contains("inactive")){
             //Fill star
@@ -73,7 +74,7 @@ const ratingUpdate = (start, end, active) => {
              message.innerText = "Good";
             break;
 
-            case 1:
+            case 5:
              message.innerText = "Excellent";
             break;
         }
