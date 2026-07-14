@@ -5,6 +5,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    min-height: 100vh;
+    background:linear-gradient(135deg, rgb(0, 119, 255), rgb(81, 146, 142)) ;
+}
+
+
 .container {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -13,20 +19,33 @@
     
 }
 
-.login-box {
-    background-color: aqua;
-    height: 40vh;
-    width: 50vw;
-    padding: 10px 40px 40px 40px;
-    border-radius: 10px;
+
+  
+.login-box{
+    width:420px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    border-radius:20px;
+    padding:50px 45px;
+    box-shadow:0 10px 35px rgba(0,0,0,.3);
+    animation:fadeIn .7s ease;
+
 }
+
 
 h1 {
     margin-bottom: 15px;
+    text-align: center;
 }
 
-.input-box, .subtitle {
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom:5px;
+}
+
+.input-box {
     margin-bottom: 5px;
+
 }
 
 input {
@@ -36,6 +55,20 @@ input {
     border: 1px solid black;
     border-radius: 5px;
     margin-top: 3px;
+    border:1px solid rgba(255,255,255,.25);
+    background:rgba(255,255,255,.15);
+    font-size: 16px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+
+.fa-solid {
+    position: absolute;
+    right:115px;
+    top: 30%;
 }
 
 button {
@@ -44,6 +77,10 @@ button {
     padding: 3px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    border: none;
+    border:1px solid rgba(255,255,255,.25);
+    background:rgba(255,255,255,.15);
 }
 
 
