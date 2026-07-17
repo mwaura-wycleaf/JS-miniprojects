@@ -16,7 +16,7 @@ myButton.addEventListener("click", function() {
         alert("Please enter a number between 1 and 100");
     }else {
         guessedNumbers.push(theGuess);
-        no_of_guesses += 1;
+        no_of_guesses ++1;
 
         if (theGuess < num){
             message1.innerHTML = `Your guess is too low`;
