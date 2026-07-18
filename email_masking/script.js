@@ -8,4 +8,7 @@ function myEmail() {
     let domain = email.slice(emailIndex);
 
     let starsCount = "*".repeat(username.length - 2);
+
+    let maskedEmail = username.slice(0, 2) + starsCount + domain;
+
 }
