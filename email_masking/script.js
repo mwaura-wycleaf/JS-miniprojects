@@ -1,9 +1,8 @@
 let maskEmail = document.getElementById("maskEmail")
 let email = document.getElementById("email");
 
-function myEmail() {
-    let emailValue = email.value;
-    let emailIndex = email.indexof("@");
+maskEmail.addEventListener("click", () => {
+    let emailIndex = email.indexOf("@");
     let username = email.slice(0, emailIndex);
     let domain = email.slice(emailIndex);
 
@@ -12,4 +11,4 @@ function myEmail() {
     let maskedEmail = username.slice(0, 2) + starsCount + domain;
      document.getElementById("demo").innerHTML = maskedEmail;
 
-}
+});
