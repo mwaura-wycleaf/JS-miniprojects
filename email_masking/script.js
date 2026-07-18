@@ -1,15 +1,24 @@
 let maskEmail = document.getElementById("maskEmail")
-let email = document.getElementById("email");
+let emailInput = document.getElementById("email");
 
 maskEmail.addEventListener("click", () => {
-    let emailInput = email.value;
+    let email = emailInput.value;
     let emailIndex = email.indexOf("@");
+
+    if (emailIndex === -1) {
+        document.getElementById("demo").innerHTML = "Please enter a valid email with @";
+        return;
+    }
     let username = email.slice(0, emailIndex);
     let domain = email.slice(emailIndex);
 
-    let starsCount = "*".repeat(username.length - 2);
+    let maskedEmail;
+    if (username.length <= 2) {
+        maskedEmail = username + domain;
+    } else {
+        let starsCount = "*".repeat(username.length - 2);
+        maskedEmail = username.slice(0, 2) + starsCount + domain;
+    }
 
-    let maskedEmail = username.slice(0, 2) + starsCount + domain;
-     document.getElementById("demo").innerHTML = maskedEmail;
-
+    document.getElementById("demo").innerHTML = maskedEmail;
 });
