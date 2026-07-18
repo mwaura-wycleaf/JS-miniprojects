@@ -2,6 +2,7 @@ let maskEmail = document.getElementById("maskEmail")
 let email = document.getElementById("email");
 
 maskEmail.addEventListener("click", () => {
+    let emailInput = email.value;
     let emailIndex = email.indexOf("@");
     let username = email.slice(0, emailIndex);
     let domain = email.slice(emailIndex);
