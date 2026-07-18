@@ -10,5 +10,6 @@ function myEmail() {
     let starsCount = "*".repeat(username.length - 2);
 
     let maskedEmail = username.slice(0, 2) + starsCount + domain;
+     document.getElementById("demo").innerHTML = maskedEmail;
 
 }
