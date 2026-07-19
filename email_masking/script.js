@@ -21,4 +21,11 @@ maskEmail.addEventListener("click", () => {
     }
 
     document.getElementById("demo").innerHTML = maskedEmail;
+    
 });
+emailInput.addEventListener("keydown", function(event) {
+      if (event.key === "Enter"){
+        event.preventDefault();
+        maskEmail.click();
+      }
+    });
