@@ -1,4 +1,4 @@
-let star = document.querySelectorAll(".star-container");
+let stars = document.querySelectorAll(".star-container");
 let submitButton = document.querySelector("#submit");
 let message = document.querySelector("#message");
 let submitSection = document.querySelector(".submit-section");
