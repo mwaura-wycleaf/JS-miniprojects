@@ -3,32 +3,7 @@ let submitButton = document.querySelector("#submit");
 let message = document.querySelector("#message");
 let submitSection = document.querySelector(".submit-section");
 
-
-//Events for touch and mouse
-let event = {
-    mouse: {
-        over:"click"
-    },
-    touch: {
-        over: "touchstart"
-    },
-}
-
-let deviceType = "";
-
-//Detect touch device
-const isTouchDevice = () => {
-    try{
-        document.createEvent("TouchEvent");
-        deviceType = "touch"
-        return true;
-    }catch (e) {
-        deviceType = "mouse";
-        return false;
-    }
-}
-
-isTouchDevice();
+const messages = ["", "Terrible", "Poor", "Average", "Good", "Excellent"];
 
 startContainer.forEach((element, index) => {
     element.addEventListener(event[deviceType].over, () => {
