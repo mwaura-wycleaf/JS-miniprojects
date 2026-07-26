@@ -14,4 +14,8 @@ function getLongestWord() {
             longest = word;
         }
     }
+
+    longestWord.innerHTML = `Longest word: ${longest}`;
+    letterCount.innerHTML = `Total characters: ${max}`;
+    return max;
 }
