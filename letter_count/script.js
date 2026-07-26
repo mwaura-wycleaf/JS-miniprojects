@@ -2,7 +2,7 @@ let textId = document.getElementById("my-text");
 let longestWord = document.getElementById("theWord");
 let letterCount = document.getElementById("theCount");
 
-function getLongestWord() {
+textId.addEventListener("input", () =>{
     let text = textId.value;
     let words = text.split(" ");
     let max = 0;
@@ -18,4 +18,5 @@ function getLongestWord() {
     longestWord.innerHTML = `Longest word: ${longest}`;
     letterCount.innerHTML = `Total characters: ${max}`;
     return max;
-}
+})
+
