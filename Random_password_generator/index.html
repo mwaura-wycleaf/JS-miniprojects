@@ -6,6 +6,73 @@
     <title>Random-Password-Generator</title>
 </head>
 <body>
-    
+     <h1>Random Password Generator</h1>
+    <p><em>Uses browser's built-in password generation</em></p>
+
+    <form>
+        <p>
+            <label for="lengthSelect">Password length:</label>
+            <select id="lengthSelect" name="length">
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8" selected>8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="28">28</option>
+                <option value="32">32</option>
+            </select>
+        </p>
+
+        <fieldset>
+            <legend>Character set (informational only)</legend>
+            <p>
+                <input type="radio" id="optNumbers" name="charset" value="numbers" checked>
+                <label for="optNumbers">Numbers only (0–9)</label>
+            </p>
+            <p>
+                <input type="radio" id="optLetters" name="charset" value="letters">
+                <label for="optLetters">Letters only (A‑Z, a‑z)</label>
+            </p>
+            <p>
+                <input type="radio" id="optAlnum" name="charset" value="alnum">
+                <label for="optAlnum">Letters + numbers</label>
+            </p>
+            <p>
+                <input type="radio" id="optFull" name="charset" value="full">
+                <label for="optFull">Full ASCII (letters, numbers, symbols)</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="passwordField">Generated password:</label>
+            <input type="password" id="passwordField" name="password"
+                   autocomplete="new-password"
+                   style="width: 20em; font-family: monospace; padding: 0.3em;">
+            <span style="font-size: 0.85em; color: #555; margin-left: 0.5em;">
+                (click eye icon to view)
+            </span>
+        </p>
+
+        <p>
+            <label for="pwdNumbers">Hint: numbers only (browser may ignore):</label>
+            <input type="password" id="pwdNumbers" 
+                   autocomplete="new-password"
+                   pattern="[0-9]*" 
+                   title="Numbers only (0-9)"
+                   style="width: 20em; font-family: monospace; padding: 0.3em;">
+        </p>
+
+        <p>
+            <label for="pwdLetters">Hint: letters only (browser may ignore):</label>
+            <input type="password" id="pwdLetters" 
+                   autocomplete="new-password"
+                   pattern="[A-Za-z]*" 
+                   title="Letters only (A-Z, a-z)"
+                   style="width: 20em; font-family: monospace; padding: 0.3em;">
+        </p>
+    </form>
 </body>
 </html>
