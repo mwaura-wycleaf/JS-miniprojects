@@ -10,8 +10,8 @@
 <body>
    <div class="container">
     <input type="text" id="output">
-    <button id="copy" onclick="genPassword()"><i class="fa-solid fa-random"></i></button>
-    <button onclick = "genPassword()"><i class="far fa-copy"></i></button>
+    <button id="copy"><i class="fa-solid fa-random" onclick="genPassword()"></i></button>
+    <button><i class="far fa-copy" onclick="copyClipboard()"></i></button>
     <input type="range" id="length" min="8" max="20" value="8" oninput="genPassword()">
     <h3 id="length-value">8</h3>
    </div>
