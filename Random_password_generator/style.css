@@ -5,3 +5,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+body { 
+    height: 100vh;
+    background:linear-gradient(-135deg, #0048ce, #008bfd);
+}
