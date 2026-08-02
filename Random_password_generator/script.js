@@ -11,4 +11,10 @@ function genPassword(){
     output.value = password;
 }
 
+function copyClipboard(){
+    output.select();
+    document.execCommand('copy');
+    alert('Password Copied');
+
+}
 genPassword();
