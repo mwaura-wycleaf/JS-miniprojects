@@ -32,3 +32,15 @@ body {
     padding:20px 5px;
     color: antiquewhite;   
 }
+
+button {
+    width:11%;
+    height:38px;
+    background-color:transparent;
+    border:none;
+    color:white;
+    font-size:18px;
+    float:right;
+    text-align: right;
+    cursor:pointer;
+}
