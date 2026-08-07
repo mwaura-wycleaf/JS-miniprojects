@@ -3,7 +3,7 @@ let locationDetails = document.getElementById("location-details");
 
 locationButton.addEventListener("click", function() {
  if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, checkError);;
+    navigator.geolocation.getCurrentPosition(showLocation , checkError);;
  } else {
     locationDetails.innerText = "Geolocation is not supported by this browser.";
  }
@@ -31,3 +31,25 @@ const checkError = (error) => {
             break;
     }
 }
+
+const showLocation = async (position) => {
+  try {
+    const { latitude, longitude } = position.coords;
+    
+    const response = await fetch(
+      `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`
+    );
+    
+    if (!response.ok) throw new Error("Network response was not ok");
+    
+    const data = await response.json();
+    const address = data.address || {};
+    
+    const city = address.city || address.town || address.village || address.suburb || "Unknown city";
+    const country = address.country || "Unknown country";
+
+    locationDetails.innerText = `${city}, ${country}`;
+  } catch (err) {
+    locationDetails.innerText = "Failed to fetch city details.";
+  }
+};
