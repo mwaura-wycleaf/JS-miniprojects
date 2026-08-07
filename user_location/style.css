@@ -27,3 +27,24 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+#location-details {
+    font-size:1.75em;
+    text-align:center;
+    margin: 1.5em 0;
+    color: #2f3234;
+    font-weight: 500;
+}
+
+.container button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 1.5em;
+    font-size: 1.25em;
+    color: white;
+    background: #0076ec;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
