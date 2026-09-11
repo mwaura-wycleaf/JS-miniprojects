@@ -1,4 +1,13 @@
-let card = document.querySelector(".card");
+let cards = document.querySelectorAll(".card");
+cards.forEach(card => {
 card.addEventListener("click", () => {
-    window.location.href = "article.html"
+    if (card.id === "vue"){
+     window.location.href = "vue.html"
+    }
+
+    if (card.id === "webdev") {
+        window.location.href = "webdev.html"
+    }
+    
+})
 })
