@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-size: 14px;
+}
+
+.intro {
+background: rgb(36, 36, 37);
+color:white;
+display: flex;
+height: 30px;
+align-items: center;
+justify-content: space-around;
+height:80px;
+}
+
+.intro a {
+    text-decoration: none;
+    color: white;
+}
+
+.vue {
+    width: 22px;
+}
+
+.vue-1 {
+    width: 22px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.intro .top-1,
+.intro .top-2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(36, 35, 35);
+}
+
+.vue .heading {
+    vertical-align: top;
+}
+
+
+
+header .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px;
+    
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-menu .second {
+    align-items: center;
+    align-items: center;
+}
+
+.main-menu ul {
+    display: flex;
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+.main-menu :hover {
+    cursor: pointer;
+}
+
+.main-menu .first {
+    margin-right: 40px;
+}
+
+.main-menu .first li {
+margin-right: 30px;
+}
+
+.main-menu .second li {
+    margin-right: 20px;
+}
+
+.second .yellow {
+    background: rgb(244, 195, 2);
+    border-radius: 3px;
+    padding: 5px 7px;
+    border: none;
+}
+
+.second .clear {
+    background: rgb(240, 236, 236);
+    border-radius:3px;
+    padding: 5px 7px ;
+}
+
+.sect-1 {
+    margin-left:20px;
+    margin-top: 30px;
+}
+
+.font--size {
+    font-size: 20px;
+}
+
+section .greenout {
+    border: 1.8px;
+    border-style: solid;
+    display: inline-block;
+    border-color: rgb(23, 184, 8);
+    border-radius: 5px;
+    color:rgb(21, 184, 8);
+    padding: 2px 8px ;
+}
+
+.large {
+    margin-top: 10px;
+    font-size: 50px;
+    max-width: 520px;
+    font-weight: bolder;
+    color: rgb(36, 35, 35);
+}
+
+.green {
+    color: rgb(21, 184, 8);
+    font-size: large;
+}
+
+.part-3 {
+    margin-top: 20px;
+    color: rgb(80, 74, 74);
+    font-size: 18px;
+}
+
+button.share {
+    padding: 5px;
+    background: rgb(226, 222, 222);
+}
+
+  .nav-menu {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+}
+
+.nav-menu .align {
+align-items: center;
+}
+
+ .nav-menu li {
+    list-style: none;
+    
+}
+
+.nav-menu ul {
+  display: flex;
+}
+
+.green-white {
+    background:rgb(21, 184, 8) ;
+    display: inline-block;
+    color: white;
+    padding: 5px 20px 3px 12px;
+    border-radius: 3px;
+}
+
+.after-logos {
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+.page-2 .bold{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(29, 8, 39);
+}
+
+.apple{
+    width: 25px;
+    margin-left: 100px;
+    
+    
+}
+
+.backmarket {
+    width: 80px;
+    color: rgb(0, 0, 0);
+    margin-left: 90px;
+}
+.roku {
+    width: 80px;
+    margin-left: 90px;
+} 
+
+.git-lab {
+    width: 70px;
+    margin-left: 90px;
+}
+.aboutyou {
+    width: 110px;
+    margin-left: 90px;
+}
+
+.nasa {
+    width: 80px;
+    margin-left: 90px;
+}
+
+.telefonica {
+    width: 70px;
+    margin-left: 100px;
+    margin-right: 90px;
+}
+
+
+.ned {
+    width: 15px;
+    margin-right: 2px;
+    border-radius: 6px;
+
+}
+
+.mright {
+    margin-right: 10px;
+}
+
+.tbh {
+    display: flex;
+}
+
+.web-site {
+    margin-left: 6px;
+}
+
+.share {
+    margin-right: 50px;
+    padding: 3px;
+    background: rgb(203, 199, 199);
+    border-radius: 4px;
+}
+
+.ubisoft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    height: 150px;
+    background: rgb(234, 230, 230);
+}
+
+.card-ubisoft {
+    display: flex;
+}
+
+.card-flex {
+    display: flex;
+}
+
+.card-flex-1 {
+    margin-right: 50px;
+    border-style: solid;
+    border-color: rgba(19, 66, 19, 0.798);
+    border-radius: 5px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.pad {
+padding-left: 10px;
+}
+
+.greenify {
+    color: white;
+    background:#0c5239;
+    width: 300px;
+    padding: 5px 20px 5px 100px;
+    margin: 0px;
+    height: 40px;
+
+}
+
+.fox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.fox-1 {
+    margin-right: 10px;
+}
+.jod {
+    display: flex;
+}
+
+.jod-1 {
+    margin-right: 30px;
+}
+
+.portfolio {
+    line-height:35px;
+    margin-bottom:70px;
+    font-size: 19px;
+}
+
+.portfolio h2 {
+    color: rgb(75, 74, 74);
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio h3 {
+    margin: 10px 0;
+}
+
+.portfolio .margin-bottom {
+    margin-bottom: 30px;
+}
+
+.jdm-top {
+    margin-bottom:15px;
+}
+
+.phone {
+    width: 300px;
+    height: 600px;
+    background: white;
+    border: 10px solid black;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin:0  80px;
+
+}
+
+.notch {
+    width: 120px;
+    height: 30px;
+    background: black;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.screen-content {
+ padding: 50px 20px 20px 20px;
+}
+
+.job {
+ margin-bottom: 20px;
+ display: flex;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    }
+
+.job p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.job .remote{
+    width: 10px;
+}
+
+.job .git-lab-1{
+    width: 30px;
+    height:30px;
+}
+
+.white-div {
+    color: rgb(12, 12, 12);
+    width:300px;
+    height: 400px;
+}
+
+.bold-bold {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.phone-form 
+{
+    display: flex;
+
+}
+
+.fom {
+    display: block;
+    margin: 8px;
+}
+
+form input{
+width: 660px;
+border-radius: 5px;
+height: 40px;
+padding: 10px;
+}
+
+.subscribe {
+    display: block;
+    color: white;
+    background: #0c5239;
+    margin-top: 15px;
+    padding: 4px 300px;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.page-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(37, 35, 35);
+    color: white;
+    height: 200px;
+    margin-left: 0px;
+}
+
+.bild {
+    font-size: 18px;
+    margin-bottom:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
