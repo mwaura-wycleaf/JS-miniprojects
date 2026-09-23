@@ -44,3 +44,11 @@ button {
 button:hover {
     background-color:rgb(87, 80, 80)
 }
+
+.operator-btn {
+    background-color: rgb(194, 134, 22);
+}
+
+.operator-btn:hover {
+    background-color: rgb(210, 168, 91);
+}
